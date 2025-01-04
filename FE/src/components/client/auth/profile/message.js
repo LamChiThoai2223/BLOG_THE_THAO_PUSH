@@ -9,7 +9,7 @@ import {
 } from "../../../../services/Auth";
 import { apiUrl } from "../../../../config/Api";
 
-const socket = io("http://localhost:4200");
+const socket = io("http://103.72.96.123");
 
 const formatDate = (timestamp) => {
   return new Date(timestamp).toLocaleString("vi-VN", {

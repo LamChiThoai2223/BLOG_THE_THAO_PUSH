@@ -52,7 +52,7 @@ const UserChart = () => {
   });
 
   useEffect(() => {
-    fetch("http://localhost:4200/api/users")
+    fetch("http://103.72.96.123/api/users")
       .then((response) => response.json())
       .then((data) => {
         const res = data.data;
@@ -105,7 +105,7 @@ const UserChart = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:4200/api/users")
+    fetch("http://103.72.96.123/api/users")
       .then((response) => response.json())
       .then((data) => {
         updateChartData(data.data);

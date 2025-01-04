@@ -82,7 +82,7 @@ const OtpEmail = ({ email: initialEmail, otp, setPage }) => {
 
     axios
       .post(
-        "http://localhost:4200/api/optEmail",
+        "http://103.72.96.123/api/optEmail",
         { otp: otpCode, email: userEmail },
         {
           headers: {
@@ -120,7 +120,7 @@ const OtpEmail = ({ email: initialEmail, otp, setPage }) => {
     try {
       setIsLoading(true);
       const response = await axios.post(
-        "http://localhost:4200/api/sendEmail",
+        "http://103.72.96.123/api/sendEmail",
         { email: userEmail },
         {
           headers: {

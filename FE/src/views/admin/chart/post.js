@@ -42,7 +42,7 @@ const BlogsChart = () => {
     });
 
     useEffect(() => {
-        fetch('http://localhost:4200/api/blogs')
+        fetch('http://103.72.96.123/api/blogs')
             .then(response => response.json())
             .then(data => {
                 const blogs = data.data; 
@@ -89,7 +89,7 @@ const BlogsChart = () => {
 
     // Cập nhật biểu đồ khi thời gian thay đổi
     useEffect(() => {
-        fetch('http://localhost:4200/api/blogs')
+        fetch('http://103.72.96.123/api/blogs')
             .then(response => response.json())
             .then(data => {
                 updateChartData(data.data);

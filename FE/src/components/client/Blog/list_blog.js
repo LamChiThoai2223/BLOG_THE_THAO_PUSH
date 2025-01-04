@@ -76,7 +76,7 @@ const BlogList = () => {
   const [blogAllData, setBlogAllData] = useState([]);
   const [authorIds, setAuthorIds] = useState([]);
 
-  const URL = "http://localhost:3000";
+  const URL = "http://103.72.96.123";
   const navigate = useNavigate();
   // console.log(authorIds);
 

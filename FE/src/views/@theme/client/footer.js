@@ -52,7 +52,7 @@ const Footer = () => {
       </div>
       <div className="copyright bg-dark content">
         Design &amp; Development{" "}
-        <a href="hhttp://localhost:3000/">POSTNEST</a>
+        <a href="hhttp://103.72.96.123/">POSTNEST</a>
       </div>
     </footer>
   );

@@ -4,7 +4,7 @@ const fs = require('fs');
 const dbConfig = {
     host: 'localhost',
     user: 'root',
-    password: 'mysql',
+    password: '',
     database: 'blog_the_thao'
 };
 

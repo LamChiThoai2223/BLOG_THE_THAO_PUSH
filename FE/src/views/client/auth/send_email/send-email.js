@@ -21,7 +21,7 @@ const SendEmail = () => {
   useEffect(() => {
     const getEmail = async () => {
       try {
-        const response = await axios.get("http://localhost:4200/api/email");
+        const response = await axios.get("http://103.72.96.123/api/email");
         setUserEmails(response.data.data); // Lưu danh sách email vào state
         console.log("Email của người dùng:", response.data.data);
       } catch (err) {
@@ -39,7 +39,7 @@ const SendEmail = () => {
 
     if (emailExists) {
       try {
-        const response = await fetch("http://localhost:4200/api/sendEmail", {
+        const response = await fetch("http://103.72.96.123/api/sendEmail", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

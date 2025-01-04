@@ -71,7 +71,7 @@ export default class TextEditor extends Component {
             block.entityRanges.forEach((range) => {
                 const entityKey = range.key;
                 if (rawContentState.entityMap[entityKey]?.type === 'LINK') {
-                    rawContentState.entityMap[entityKey].data.url = 'http://localhost:3000';
+                    rawContentState.entityMap[entityKey].data.url = 'http://103.72.96.123';
                 }
             });
         });
@@ -83,7 +83,7 @@ export default class TextEditor extends Component {
     componentDidMount() {
         const { content } = this.props;
         if (content) {
-            const sanitizedContent = content.replace(/href="(http[s]?:\/\/[^\"]+)"/g, 'href="http://localhost:3000"');
+            const sanitizedContent = content.replace(/href="(http[s]?:\/\/[^\"]+)"/g, 'href="http://103.72.96.123"');
 
             const contentBlock = htmlToDraft(sanitizedContent);
             if (contentBlock) {
@@ -140,7 +140,7 @@ export default class TextEditor extends Component {
 
         const html = event.clipboardData.getData('text/html');
         if (html) {
-            const fixedHTML = html.replace(/href="(http[s]?:\/\/[^\"]+)"/g, 'href="http://localhost:3000"');
+            const fixedHTML = html.replace(/href="(http[s]?:\/\/[^\"]+)"/g, 'href="http://103.72.96.123"');
             const sanitizedHTML = sanitizeHtml(fixedHTML, {
                 allowedTags: ['p', 'b', 'i', 'u', 'ul', 'ol', 'li', 'br', 'img', 'a'],
                 allowedAttributes: {

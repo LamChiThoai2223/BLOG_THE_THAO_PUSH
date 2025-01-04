@@ -508,7 +508,7 @@ const Activity = () => {
                           >
                             <div className="d-flex">
                               <Link
-                                to={`http://localhost:3000/blog/detail/${blog.blog_id}`}
+                                to={`http://103.72.96.123/blog/detail/${blog.blog_id}`}
                                 className="pull-left me-3"
                               >
                                 <img
@@ -522,7 +522,7 @@ const Activity = () => {
                               </Link>
                               <div className="media-body">
                                 <Link
-                                  to={`http://localhost:3000/blog/detail/${blog.blog_id}`}
+                                  to={`http://103.72.96.123/blog/detail/${blog.blog_id}`}
                                 >
                                   <p className="activity-title">
                                     <a href="#" className="text-dark">
@@ -816,7 +816,7 @@ const Activity = () => {
                           >
                             <div className="d-flex">
                               <Link
-                                to={`http://localhost:3000/blog/detail/${post.blog_id}`}
+                                to={`http://103.72.96.123/blog/detail/${post.blog_id}`}
                                 className="pull-left me-3"
                               >
                                 <img
@@ -830,7 +830,7 @@ const Activity = () => {
                               </Link>
                               <div className="media-body">
                                 <Link
-                                  to={`http://localhost:3000/blog/detail/${post.blog_id}`}
+                                  to={`http://103.72.96.123/blog/detail/${post.blog_id}`}
                                 >
                                   <p className="activity-title">
                                     <a href="#" className="text-dark">
