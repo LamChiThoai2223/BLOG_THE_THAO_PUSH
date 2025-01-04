@@ -1,0 +1,19 @@
+.editor-container {
+    display: flex;
+    flex-direction: row; /* Chuyển hướng hiển thị thành ngang */
+    align-items: flex-start;
+  }
+  
+  .demo-wrapper {
+    width: 100%;
+  }
+  
+  .demo-editor {
+    border: 1px solid #F1F1F1;
+    padding: 10px;
+    min-height: 400px;
+    width: 100%;
+  }
+  
+
+  

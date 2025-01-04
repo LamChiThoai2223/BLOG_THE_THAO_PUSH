@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "nodemailer": "^6.9.14",
+    "react-bootstrap": "^2.10.4",
+    "react-cookie": "^7.2.0",
+    "react-hook-form": "^7.52.1",
+    "react-toastify": "^10.0.5"
+  }
+}
